@@ -11,6 +11,8 @@ repositories {
 
 compileJava {
     options.fork = true
+    compileJava.options.debug = true
+    compileJava.options.debugOptions.debugLevel = "source,lines,vars"
 }
 
 dependencies {
